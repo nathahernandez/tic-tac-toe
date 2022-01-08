@@ -53,7 +53,7 @@ function isWin(){
             let finalbox = document.getElementById("finalbox");
             finalbox.style.display = "block";
             let msg = document.getElementById("mensage");
-            msg.innerText = `${board[pos1]} Wins!`;
+            msg.innerText = `${board[pos1]} wins!`;
             return true;
         }
         let draw=0;
