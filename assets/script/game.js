@@ -31,7 +31,7 @@ function toMove(id){
             }
                 let imagem = document.createElement("img");
                 imagem.classList.add("select");
-                imagem.src = "./assets/icon/"+symbols[player]+".png";
+                imagem.src = "assets/icon/"+symbols[player]+".png";
                 aux.appendChild(imagem);
                 aux.setAttribute("used", "yes");
                 aux.setAttribute("player", `${player}`);
