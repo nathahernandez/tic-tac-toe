@@ -1,5 +1,5 @@
 let player = 0;
-let symbols = ["Shiba", "Doge"];
+let symbols = ["shiba", "doge"];
 let board = ["","","","","","","","",""];
 let gameOver = false;
 
@@ -58,7 +58,7 @@ function isWin(){
         }
         let draw=0;
         for(let i=0; i < board.length; i++){
-            if(board[i] == "Shiba" || board[i] == "Doge"){
+            if(board[i] == "shiba" || board[i] == "doge"){
                 draw++;
             }
         }
