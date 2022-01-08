@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tic Tac Toe</title>
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="icon" href="./assets/icon/ico.png">
+    </head>
+
+    <body>
+            <header class="head">
+                    <div class="tt">
+                        Tic Tac Toe
+                    </div>
+            </header>
+
+            <div id="board">
+                <div class="box" id=0 used=" "></div>
+                <div class="box" id=1 used=" "></div>
+                <div class="box" id=2 used=" "></div>
+                <div class="box" id=3 used=" "></div>
+                <div class="box" id=4 used=" "></div>
+                <div class="box" id=5 used=" "></div>
+                <div class="box" id=6 used=" "></div>
+                <div class="box" id=7 used=" "></div>
+                <div class="box" id=8 used=" "></div>
+            </div>
+
+            <div id="finalbox">
+                <div class="finalgame">
+                    <h1 id="mensage">O Jogo Terminou</h1>
+                    <input type="submit" id="btn" onclick="restart()" value="Play again">
+                </div>
+            </div>
+
+            <footer class="foot">
+                    <a href="https://github.com/natha6dev" class="link">Developed by natha6Dev</a>
+            </footer>
+
+            
+
+        <script src="./assets/script/game.js"></script>
+        <script src="./assets/script/interface.js"></script>
+    </body>
+
+</html>
