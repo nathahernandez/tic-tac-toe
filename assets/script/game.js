@@ -1,5 +1,5 @@
 let player = 0;
-let symbols = ["shiba", "doge"];
+let symbols = ["Shiba", "Doge"];
 let board = ["","","","","","","","",""];
 let gameOver = false;
 
@@ -51,21 +51,21 @@ function isWin(){
 
         if(board[pos1] == board[pos2] && board[pos1] == board[pos3] && board[pos1] != ""){
             let finalbox = document.getElementById("finalbox");
-            finalbox.style.display = "block";
+            finalbox.style.display = "flex";
             let msg = document.getElementById("mensage");
             msg.innerText = `${board[pos1]} wins!`;
             return true;
         }
         let draw=0;
         for(let i=0; i < board.length; i++){
-            if(board[i] == "shiba" || board[i] == "doge"){
+            if(board[i] == "Shiba" || board[i] == "Doge"){
                 draw++;
             }
         }
         if(draw == 9){
             let finalbox = document.getElementById("finalbox");
             let msg = document.getElementById("mensage");
-            finalbox.style.display = "block";
+            finalbox.style.display = "flex";
             msg.innerText = `Draw`;
             return true;
         }

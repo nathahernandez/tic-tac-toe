@@ -5,107 +5,134 @@
     font-family: 'JetBrains Mono', monospace;
 }
 body{
-    background: linear-gradient(90deg, rgba(40,89,67,1) 0%, rgba(14,31,23,1) 50%, rgba(40,89,67,1) 100%);
+    background: linear-gradient(90deg, rgba(8,65,92,1) 0%, rgba(238,229,233,1) 50%, rgba(204,41,54,1) 100%);
 }
-.head{
+.container{
     width: 100%;
-    height: 100px;
+    height: 100%;
+    position: relative;
+}
+
+.head{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 15%;
     display: flex;
-    align-items: center;    /* eixo X */
-    justify-content: center; /* eixo Y */
+    align-items: center;    
+    justify-content: center; 
     font-size: 50px;
-    color: white;
-    background-color: #285943;
+    color: #EEE5E9;
+    background-color: #08415C;
 }
 .tt{
     width: 400px;
     text-align: center;
-    border: 2px solid #77AF9C;
+    border: 2px solid #DE1A1A;
     border-radius: 30px;
     transition: width 1s;
+}
+
+.boardbox{
+    display: flex;
+    justify-self: center;
+    align-self: center;
 }
 #board{
     width: 100%;
     display: grid;
     grid-template: auto auto auto / auto auto auto;
+    gap: 2vh;
     align-items: center;
     justify-content: center;
-    gap: 20px;
-    margin-top: 10vh;
+    margin-top: 27.7vh;
+    margin-bottom: 27.7vh;
 }
 .box{
-    background-color: #77AF9C;
+    background-color: #6B818C;
     width: 130px;
     height: 130px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 40px;
-    border: 2px solid white;
+    border: 2px solid #08415C;
     transition: background-color .5s;
+    box-shadow: 0px 10px 13px -7px #000000;
 
-}
-.box:hover{
-    background-color: #5e8a7b;
-    transition: background-color .5s;
 }
 .select{
     width: 80%;
 }
-.foot{
+#finalbox{
     width: 100%;
-    background-color:   #285943;
-    height: 50px;
-    display: flex;
+    height: 100%;
+    background-color: rgba(238, 229, 233, 0.7);
+    float: left;
+    display: none;
     align-items: center;
     justify-content: center;
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.finalgame{
+    width: 400px;
+    background-color: #08415C;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    color: #EEE5E9;
+    text-align: center;
+    border-radius: 30px;
+    padding: 20px;
+    box-shadow: 0px 10px 13px -7px #000000;
+}
+#btn{
+    margin-top: 25px;
+    cursor: pointer;
+    border: 1px solid #DE1A1A;
+    width: 100%;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: #08415C;
+    color: #EEE5E9;
+    transition: background-color .5s;
+}
+.foot{
+    width: 100%;
+    height: 50px;
+    background-color:#08415C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-end;
+    justify-self: center;
+    position: absolute;
     bottom: 0;
+    overflow: hidden;
 }
 .link{
     text-decoration: none;
-    color: white;
+    color: #EEE5E9;
 }
 .link:hover{
     padding: 10px;
     border-radius: 10px;
-    background-color:  #0e1f17;
+    background-color:  #DE1A1A;
     transition: background-color 1s;
 }
 .tt:hover{
     width: 800px;
     transition: width 1s;
 }
-#finalbox{
-    width: 100%;
-    height: 200px;
-    display: none;
-}
-.finalgame{
-    width: 400px;
-    height: 150px;
-    background: linear-gradient(90deg, rgba(119,175,156,0.4) 0%, rgba(40,89,67,1) 45%, rgba(14,31,23,1) 100%);
-    display: block;
-    margin: 50px auto;
-    color: white;
-    text-align: center;
-    border-radius: 30px;
-    border: 1px solid white;
-    padding: 20px;
-}
-#btn{
-    margin-top: 25px;
-    cursor: pointer;
-    border: none;
-    width: 100%;
-    padding: 5px;
-    border-radius: 20px;
-    background-color: #0e1f17;
-    color: white;
-    transition: background-color .5s;
-}
 #btn:hover{
-    background-color: #568072;
+    background-color: #DE1A1A;
     transition: background-color .5s;
-    color: white;
+    color: #EEE5E9;
+}
+.box:hover{
+    background-color: #EEE5E9;
+    transition: background-color .5s;
 }

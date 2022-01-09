@@ -13,36 +13,41 @@
     </head>
 
     <body>
+        <div class="container">
+
             <header class="head">
                     <div class="tt">
                         Tic Tac Toe
                     </div>
             </header>
 
-            <div id="board">
-                <div class="box" id=0 used=" "></div>
-                <div class="box" id=1 used=" "></div>
-                <div class="box" id=2 used=" "></div>
-                <div class="box" id=3 used=" "></div>
-                <div class="box" id=4 used=" "></div>
-                <div class="box" id=5 used=" "></div>
-                <div class="box" id=6 used=" "></div>
-                <div class="box" id=7 used=" "></div>
-                <div class="box" id=8 used=" "></div>
-            </div>
-
             <div id="finalbox">
                 <div class="finalgame">
-                    <h1 id="mensage">O Jogo Terminou</h1>
+                    <h1 id="mensage"></h1>
                     <input type="submit" id="btn" onclick="restart()" value="Play again">
                 </div>
             </div>
+
+            <div class="boardbox">
+                <div id="board">
+                    <div class="box" id=0 used=" "></div>
+                    <div class="box" id=1 used=" "></div>
+                    <div class="box" id=2 used=" "></div>
+                    <div class="box" id=3 used=" "></div>
+                    <div class="box" id=4 used=" "></div>
+                    <div class="box" id=5 used=" "></div>
+                    <div class="box" id=6 used=" "></div>
+                    <div class="box" id=7 used=" "></div>
+                    <div class="box" id=8 used=" "></div>
+                </div>
+            </div>
+            
 
             <footer class="foot">
                     <a href="https://github.com/natha6dev" class="link">Developed by natha6Dev</a>
             </footer>
 
-            
+        </div> 
 
         <script src="./assets/script/game.js"></script>
         <script src="./assets/script/interface.js"></script>
