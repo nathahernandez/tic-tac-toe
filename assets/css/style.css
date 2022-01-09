@@ -128,11 +128,18 @@ body{
     transition: width 1s;
 }
 #btn:hover{
-    background-color: #DE1A1A;
+    background-color: rgba(222, 26, 26, 0.8);
     transition: background-color .5s;
     color: #EEE5E9;
 }
 .box:hover{
     background-color: #EEE5E9;
     transition: background-color .5s;
+}
+.finalgame p{
+    display: inline-block;
+    padding: 5px;
+    border-radius: 5px 5px 5px 5px;
+    font-size: 30px;
+    background-color:rgba(222, 26, 26, 0.8);
 }
