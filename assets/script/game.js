@@ -20,7 +20,6 @@ function toMove(id){
     if(gameOver == true){
         return;
     }
-
     if(aux.getAttribute("used") == " "){
         if(gameOver == false){
             if(player == 0) {
@@ -29,14 +28,14 @@ function toMove(id){
             else {
                 player = 0;
             }
-                let imagem = document.createElement("img");
-                imagem.classList.add("select");
-                imagem.src = "./assets/img/"+symbols[player]+".png";
-                aux.appendChild(imagem);
-                aux.setAttribute("used", "yes");
-                aux.setAttribute("player", `${player}`);
-                board[aux.id] = symbols[player];
-                gameOver = isWin();
+            let imagem = document.createElement("img");
+            imagem.classList.add("select");
+            imagem.src = "./assets/img/"+symbols[player]+".png";
+            aux.appendChild(imagem);
+            aux.setAttribute("used", "yes");
+            aux.setAttribute("player", `${player}`);
+            board[aux.id] = symbols[player];
+            gameOver = isWin();
         }
     }  
 }
@@ -57,12 +56,12 @@ function isWin(){
             return true;
         }
         let draw=0;
-        for(let i=0; i < board.length; i++){
-            if(board[i] == "shiba" || board[i] == "doge"){
+        for(let j=0; j < board.length; j++){
+            if(board[j] == "shiba" || board[j] == "doge"){
                 draw++;
             }
         }
-        if(draw == 9){
+        if(draw == 10){
             let finalbox = document.getElementById("finalbox");
             let msg = document.getElementById("mensage");
             finalbox.style.display = "flex";
