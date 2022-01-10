@@ -16,7 +16,6 @@ let state = [
 
 function toMove(id){
     let aux = document.getElementById(`${id}`);
-
     if(gameOver == true){
         return;
     }
@@ -47,27 +46,26 @@ function isWin(){
         let pos1 =  seq[0];
         let pos2 =  seq[1];
         let pos3 =  seq[2];
-
         if(board[pos1] == board[pos2] && board[pos1] == board[pos3] && board[pos1] != ""){
             let finalbox = document.getElementById("finalbox");
             finalbox.style.display = "flex";
             let msg = document.getElementById("mensage");
             msg.innerText = `${board[pos1]} wins!`;
             return true;
+        } 
+    }
+    let draw=0;
+    for(let j=0; j < board.length; j++){
+        if(board[j] == "shiba" || board[j] == "doge"){
+            draw++;
         }
-        let draw=0;
-        for(let j=0; j < board.length; j++){
-            if(board[j] == "shiba" || board[j] == "doge"){
-                draw++;
-            }
-        }
-        if(draw == 10){
-            let finalbox = document.getElementById("finalbox");
-            let msg = document.getElementById("mensage");
-            finalbox.style.display = "flex";
-            msg.innerText = `draw`;
-            return true;
-        }
+    }
+    if(draw == 9){
+        let finalbox = document.getElementById("finalbox");
+        let msg = document.getElementById("mensage");
+        finalbox.style.display = "flex";
+        msg.innerText = `draw`;
+        return true;
     }
         return false;
 }
