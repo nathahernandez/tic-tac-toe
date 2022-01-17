@@ -13,4 +13,4 @@ HTML, CSS e Javascript
 
 
 ## 🎮 Página do Jogo
-[Link](https://natha6dev.github.io/tic-tac-toe-memecoin/ "matching game")
+[Link](https://natha6dev.github.io/tic-tac-toe-memecoin/ "Tic Tac Toe")
