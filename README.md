@@ -1,8 +1,7 @@
 
 # #️⃣ Jogo da velha com Doge e Shiba (Criptomoedas)
 
-Uma breve descrição sobre o que esse projeto faz e para quem ele é
-
+Trabalho de estudo durante o aprendizado...
 
 ## 🚀 Sobre mim
 Sou um "Dropout" de Engenharia de Computação (UFPEL) e atualmente foco meus estudos para me tornar um Desenvolvedor Web FullStack...
